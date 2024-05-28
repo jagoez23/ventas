@@ -51,13 +51,21 @@
                     </nav>
                 </div> ---}}
                 <div class="sb-sidenav-menu-heading">Modulos</div>
-                <a class="nav-link" href="{{ route('categorias.index') }}">
+                <a class="nav-link" href="{{route('categorias.index')}}">
                     <div class="sb-nav-link-icon"><i class="fa-solid fa-tag"></i></div>
                     Categorias
                 </a>
-                <a class="nav-link" href="{{ route('marcas.index') }}">
+                <a class="nav-link" href="{{route('marcas.index')}}">
                     <div class="sb-nav-link-icon"><i class="fa-solid fa-font-awesome"></i></div>
                     Marcas
+                </a>
+                <a class="nav-link" href="{{route('presentaciones.index')}}">
+                    <div class="sb-nav-link-icon"><i class="fa-solid fa-cube"></i></div>
+                    Presentaciones
+                </a>
+                <a class="nav-link" href="{{route('productos.index')}}">
+                    <div class="sb-nav-link-icon"><i class="fa-brands fa-shopify"></i></div>
+                    Productos
                 </a>
                 <a class="nav-link" href="#">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>

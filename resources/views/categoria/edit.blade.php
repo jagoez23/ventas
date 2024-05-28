@@ -2,7 +2,7 @@
 
 @section('title', 'Editar Categoria')
 
-@push('csd')
+@push('css')
     
 @endpush
 
