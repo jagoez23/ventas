@@ -10,7 +10,7 @@
         <h1 class="mt-4 text-center">Editar Presentación</h1>
         <ol class="breadcrumb mb-4">
             <li class="breadcrumb-item active"><a href="{{ route('panel') }}">Inicio</a></li>
-            <li class="breadcrumb-item active"><a href="{{ route('presentaciones.index') }}">Marcas</a></li>
+            <li class="breadcrumb-item active"><a href="{{ route('presentaciones.index') }}">Presentaciones</a></li>
             <li class="breadcrumb-item active">Editar Presentación</li>
         </ol>
 
@@ -43,7 +43,6 @@
                 </div>
             </form>
         </div>
-
     </div>
 @endsection
 

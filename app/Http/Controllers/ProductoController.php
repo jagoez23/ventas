@@ -159,13 +159,13 @@ class ProductoController extends Controller
                 ->update([
                     'estado' => 0
                 ]);
-            $message = 'Producto inactivo';
+            $message = 'Producto inactivado correctamente';
         } else {
             Producto::where('id', $producto->id)
                 ->update([
                     'estado' => 1
                 ]);
-            $message = 'Producto activo';
+            $message = 'Producto activado correctamente';
         }
         return redirect()->route('productos.index')->with('success', $message);
     }

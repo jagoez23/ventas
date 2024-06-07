@@ -89,13 +89,13 @@ class marcaController extends Controller
             ->update([
                 'estado' => 0
             ]);
-            $message = 'Marca eliminada';
+            $message = 'Marca inactivada correctamente';
         } else {  
             Caracteristica::where('id',$marca->caracteristica->id)
             ->update([
                 'estado' => 1
             ]);
-            $message = 'Marca restaurada';  
+            $message = 'Marca activada correctamente';  
         }   
         return redirect()->route('marcas.index')->with('success',$message);
     }

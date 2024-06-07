@@ -19,7 +19,7 @@ class presentacionController extends Controller
     {
         $presentacion = Presentacione::with('caracteristica')->latest()->get();
         //dd($marcas);
-        return view('presentacion.index',['presentaciones' => $presentacion]);
+        return view('presentacion.index',['presentacione' => $presentacion]);
     }
 
     /**
@@ -71,7 +71,7 @@ class presentacionController extends Controller
      */
     public function update(UpdatePresentacionRequest $request, Presentacione $presentacion)
     {
-        Caracteristica::where('id', $presentacion->caracteristica->id)
+        Caracteristica::where('id',$presentacion->caracteristica->id)
             ->update($request->validated());
 
         return redirect()->route('presentaciones.index')->with('success', 'Presentación actualizada correctamente');
@@ -90,13 +90,13 @@ class presentacionController extends Controller
             ->update([
                 'estado' => 0
             ]);
-            $message = 'Presentación eliminada';
+            $message = 'Presentación inactivada';
         } else {  
             Caracteristica::where('id',$presentacion->caracteristica->id)
             ->update([
                 'estado' => 1
             ]);
-            $message = 'Presentación restaurada';  
+            $message = 'Presentación activada';  
         }   
         return redirect()->route('presentaciones.index')->with('success',$message);
     }

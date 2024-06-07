@@ -94,13 +94,13 @@ class categoriaController extends Controller
             ->update([
                 'estado' => 0
             ]);
-            $message = 'Categoría eliminada';
+            $message = 'Categoría inactivada correctamente';
         } else {  
             Caracteristica::where('id',$categoria->caracteristica->id)
             ->update([
                 'estado' => 1
             ]);
-            $message = 'Categoría restaurada';  
+            $message = 'Categoría activada correctamente';  
         }   
         return redirect()->route('categorias.index')->with('success',$message);
     }
