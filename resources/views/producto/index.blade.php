@@ -89,9 +89,9 @@
                 </td>
                 <td>
                     @if ($item->estado == 1)
-                    <span class="fw-bolder rounded p-1 bg-success text-white">Activo</span>
+                    <span class="badge rounded-pill text-bg-success d-inline">Activo</span>
                     @else
-                    <span class="fw-bolder rounded p-1 bg-danger text-white">Inactivo</span>
+                    <span class="badge rounded-pill text-bg-danger d-inline">Inactivo</span>
                     @endif
                 </td>
                 <td>

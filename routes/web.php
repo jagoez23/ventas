@@ -4,7 +4,7 @@ use App\Http\Controllers\categoriaController;
 use App\Http\Controllers\marcaController;
 use App\Http\Controllers\presentacionController;
 use App\Http\Controllers\ProductoController;
-use App\Http\Controllers\ProductoControllerController;
+use App\Http\Controllers\ClienteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,7 +22,8 @@ Route::resources([
     'categorias' => categoriaController::class,
     'marcas' => marcaController::class,
     'presentaciones' => presentacionController::class,
-    'productos' => ProductoController::class
+    'productos' => ProductoController::class,
+    'clientes' =>  ClienteController::class
 
 ]);
 

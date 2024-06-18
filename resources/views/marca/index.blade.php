@@ -75,9 +75,9 @@
                         </td>
                         <td>
                             @if ($marca->caracteristica->estado == 1)
-                            <span class="fw-bolder p-1 rounded bg-success text-white">Activo</span>
+                            <span class="badge rounded-pill text-bg-success d-inline">Activo</span>
                             @else
-                            <span class="fw-bolder p-1 rounded bg-danger text-white">Inactivo</span>
+                            <span class="badge rounded-pill text-bg-danger d-inline">Inactivo</span>
                             @endif
                         </td>
                         <td>
